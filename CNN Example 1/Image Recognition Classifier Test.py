@@ -29,7 +29,7 @@ classifier.add(Dense(128, activation = 'relu'))
 classifier.add(Dense(1, activation = 'sigmoid'))
 
 # Compiling the CNN
-classifier.compile(optimizer = 'adam', loss = 'binaru_crossentropy', metrics = ['accuracy'])
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
 # Part 2 - Fitting the CNN to the images
 from keras.preprocessing.image import ImageDataGenerator
